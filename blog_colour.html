@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog, Doro Hinrichs</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo-skiplink-container">
+      <a href="#main" class="skip-to-content"><p><span aria-hidden="true">&darr;&nbsp;</span>Skip to content</p></a>
+    </div>
+      <nav>
+          <a href="index.html" class="nav-link active">Home</a>
+          <span class="line" aria-hidden="true">|</span>
+          <a href="contributions.html" class="nav-link">Contributions</a>
+          <span class="line" aria-hidden="true">|</span>
+          <a href="quests.html" class="nav-link">Side Quests</a>
+          <span class="line" aria-hidden="true">|</span>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <span class="line" aria-hidden="true">|</span>
+          <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+  </header>
+    <main id="main">
+      <section class="blog-post-container">
+        <h1>Colors and contrast</h1>
+        <p>
+          <time datetime="2024-11-23">23 November 2023</time>
+          <span aria-hidden="true">·</span>
+          <span>2 min read</span>
+        </p>
+        <p>
+          Whether you want to adjust an existing colour scheme to be more accessible 
+          or build an accessible colour palette from scratch, here are some tools to help you out.
+        </p>
+        <h2>Improve colour scheme</h2>
+        <p>
+          Most of the time we don't need to create a whole new colour palette from scratch, 
+          just tweak the existing colours to make them more accessible.
+        </p>
+        <h3>How to find contrast issues</h3>
+        <p>
+          In almost every browser, the selection tool will show you the colour contrast ratio of text elements.
+          <br/>
+          For Chrome try this: 
+          <ul>
+            <li>Open the developer tools with right click, option 'Inspect', then pick the select icon</li>
+            <li>Hover over an element on the page to find the contrast ratio</li> 
+            <li>Some browsers (e.g. Firefox) will also show you the WCAG level it meets (if any)</li>
+          </ul>
+        </p>
+        <figure>
+          <img
+            src="./images/contrast_example.png"
+            alt="Select tool in Chrome showing contrast ratio"
+            width="576"
+            height="401">
+          <figcaption>The select tool in the developer tools panel shows a color contrast issue with a ratio of 2.78</figcaption>
+        </figure>
+        <hr/>
+        <h3>How to fix colour issues</h3>
+        <ul>
+          <li><a href="https://oklch.com/#0.7,0.1,166,100"><p>OKLCH: easy way to find a lighter/darker shade</p></a></li>
+          <li>
+            <a href="https://www.learnui.design/tools/accessible-color-generator.html"><p>Learn UI Accessible color generator: Find the closest accessible match of a colour</p></a>
+            <figure>
+              <img
+                src="./images/image.png"
+                alt="Learn UI accessible color generator interface"
+                width="423"
+                height="459">
+              <figcaption>Learn UI gives a more accessible close match of the original colour</figcaption>
+            </figure>
+          </li>
+        </ul>
+      <hr/>
+        <h2 id="palette">How to build a full color palette:</h2>
+        <ul>
+          <li><a href="https://youtu.be/yYwEnLYT55c"><p>Youtube video: "How I make UI color palettes" UX Tools</p></a></li>
+          <li><a href="https://harmonizer.evilmartians.com/#W1siMTAwIiwxMDAsbnVsbCwiMjAwIiw5MCxudWxsLCIzMDAiLDc3LG51bGwsIjQwMCIsNjUsbnVsbCwiNTAwIiw1MSxudWxsLCI2MDAiLDY1LG51bGwsIjcwMCIsNzcsbnVsbCwiODAwIiw5MCxudWxsLCI5MDAiLDEwMCxudWxsXSxbIlJlZCIsMjAsIk11c3RhcmQiLDkwLCJUdXJxdW9pc2UiLDE4MCwiQXp1cmUiLDI1MCwiRnVjaHNpYSIsMzIwXSxbImFwY2EiLCJmZ1RvQmciLCJldmVuIiwiI2ZmZiIsIiMwMDAiLDUsInAzIl1d"><p>OKLCH color palette generator</p></a></li>
+          <li><a href="https://randoma11y.com/"><p>Randoma11y: Get two random accessible colours</p></a></li>
+          <li><a href="https://venngage.com/tools/accessible-color-palette-generator"><p>Venngage Accessible Color Palette Generator</p></a></li>
+          <li><a href="http://colorsafe.co/"><p>Colorsafe: Find accessible options for text ratios contrast</p></a></li>
+          <li><a href="https://contrast-finder.tanaguru.com/"><p>Tanguru contrast finder: Find color contrasts and accessible alternatives</p></a></li>
+          <li><a href="https://meyerweb.com/eric/tools/color-blend/#FFFFFF:000000:10:hex"><p>Meyerweb Color Blend Tool: Generate up to 10 blend steps between two colours</p></a></li>
+          <li><a href="https://huemint.com/brand-intersection/"><p>Huemint - to see your colors in action</p></a></li>
+        </ul>
+      <hr/> 
+        <h3>Got your draft palette? Check out what it looks like for different people.</h3>
+        <ul>
+          <li><a href="https://davidmathlogic.com/colorblind"><p>Coloring for Colorblindness</p></a></li>
+          <li><a href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/simulation/index.html"><p>Firefox color vision simulation documentation</p></a></li>
+          <p>Firefox Accessibility Inspector has a color vision simulation tool.
+            <br/>Here is what Wordle looks like from different perspectives:
+          </p>
+          <figure>
+            <img
+              src="./images/wordle_default.png"
+              alt="wordle without colorblindness simulation"
+              width="781"
+              height="170">
+            <figcaption>Default</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/wordle_protanopia.png"
+              alt="wordle with protanopia simulation"
+              width="781"
+              height="170">
+            <figcaption>Protanopia simulation</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/wordle_deuteranopia.png"
+              alt="wordle with deuteranopia simulation"
+              width="781"
+              height="170">
+            <figcaption>Deuteranopia simulation</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/wordle_tritanopia.png"
+              alt="wordle with tritanopia simulation"
+              width="781"
+              height="170">
+            <figcaption>Tritanopia simulation</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/wordle_achromatopsia.png"
+              alt="wordle with achromatopsia simulation"
+              width="781"
+              height="170">
+            <figcaption>Achromatopsia simulation</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/wordle_contrast_loss.png"
+              alt="wordle with contrast loss simulation"
+              width="781"
+              height="170">
+            <figcaption>Contrast loss simulation</figcaption>
+          </figure>
+        </ul>
+        <p>
+          While color simulators can never replace testing your product with disabled users, 
+          they can still be a useful reminder that colour can be experienced in many different ways.
+        </p>
+      </section>
+    </main>
+</body>
+</html>

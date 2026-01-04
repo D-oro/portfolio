@@ -17,7 +17,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 a:link {
@@ -79,7 +79,6 @@ iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
-  margin-block: 1rem;
 }
 
 :root {

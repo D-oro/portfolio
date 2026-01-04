@@ -47,6 +47,10 @@ nav > a[aria-current="page"] {
   border-color: var(--border-default);
 }
 
+.current-page {
+  border-color: var(--border-default);
+}
+
 nav > a:link {
   color: var(--nav-link-default);
 }

@@ -47,10 +47,6 @@ nav > a[aria-current="page"] {
   border-color: var(--border-default);
 }
 
-nav > a.not-current-page {
-  border-color: transparent;
-}
-
 nav > a.current-page {
   border-color: var(--border-default);
 }

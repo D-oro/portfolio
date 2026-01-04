@@ -17,6 +17,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+	flex-wrap: wrap;
 }
 
 a:link {
@@ -89,8 +90,8 @@ iframe {
   --surface-page: #f3f3f3;
   --surface-mark: #fff;
   --text-default: #002e34;
-  --link-default: #0000EE;
-  --link-visited: #551A8B;
+  --link-default: #0000ee;
+  --link-visited: #551a8b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,7 +103,7 @@ iframe {
     --surface-page: #002e34;
     --surface-mark: #333;
     --text-default: #f3f3f3;
-    --link-default: #7AA2FF;
-    --link-visited: #B48EFC;
+    --link-default: #7aa2ff;
+    --link-visited: #b48efc;
   }
 }

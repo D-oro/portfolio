@@ -9,12 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 36rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0.5rem 2rem 2rem;
   color: #002e34;
 }
 
 nav {
-  padding: 0.5rem;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -28,6 +27,8 @@ nav > a {
   justify-content: center;
   padding: 0 1rem;
   text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
 }
 
 nav > a:hover {
@@ -35,7 +36,27 @@ nav > a:hover {
 }
 
 nav > a[aria-current="page"] {
-  border-bottom: 2px solid #002e34;
+  border-color: #285258;
+}
+
+nav > a:link {
+  color: #002e34;
+}
+
+nav > a:visited {
+  color: #002e34;
+}
+
+li {
+  line-height: 2rem;
+}
+
+mark {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-style: outset;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 img {

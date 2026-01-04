@@ -19,6 +19,14 @@ nav {
   align-items: center;
 }
 
+a:link {
+  color: var(--link-default);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
 nav > a {
   height: 3rem;
   display: flex;
@@ -31,7 +39,7 @@ nav > a {
 }
 
 nav > a:hover {
-  background-color: var(--link-hover-bg);
+  background-color: var(--nav-link-hover-bg);
 }
 
 nav > a[aria-current="page"] {
@@ -39,11 +47,11 @@ nav > a[aria-current="page"] {
 }
 
 nav > a:link {
-  color: var(--text-default);
+  color: var(--nav-link-default);
 }
 
 nav > a:visited {
-  color: var(--text-default);
+  color: var(--nav-link-default);
 }
 
 li {
@@ -56,6 +64,7 @@ mark {
   border-style: outset;
   padding: 4px;
   border-radius: 4px;
+  color: var(--text-default);
 }
 
 img {
@@ -75,9 +84,25 @@ iframe {
 :root {
   --border-default: #002e34;
   --border-mark: #ddd;
-  --link-default: #002e34;
-  --link-hover-bg: #3f686f27;
+  --nav-link-default: #002e34;
+  --nav-link-hover-bg: #3f686f27;
   --surface-page: #f3f3f3;
   --surface-mark: #fff;
   --text-default: #002e34;
+  --link-default: #0000EE;
+  --link-visited: #551A8B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-default: #f3f3f3;
+    --border-mark: #777;
+    --nav-link-default: #f3f3f3;
+    --nav-link-hover-bg: #3f686f40;
+    --surface-page: #002e34;
+    --surface-mark: #333;
+    --text-default: #f3f3f3;
+    --link-default: #7AA2FF;
+    --link-visited: #B48EFC;
+  }
 }

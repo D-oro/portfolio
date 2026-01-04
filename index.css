@@ -1,12 +1,12 @@
 body {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-font-size: 1rem;
-line-height: 1.5;
-text-rendering: optimizeLegibility;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -17,7 +17,7 @@ img {
 
 iframe {
   display: block;
-  max-width: 56rem;
+  max-width: 36rem;
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
